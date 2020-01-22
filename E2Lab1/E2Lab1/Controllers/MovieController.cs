@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace E2Lab1.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class MovieController : ControllerBase
+    {
+        // GET: api/Movie
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value1", "value2" };
+        }
+
+        // GET: api/Movie/5
+        [HttpGet("{id}", Name = "Get")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        // POST: api/Movie
+        [HttpPost]
+        public void Post([FromBody] string value)
+        {
+        }
+
+    }
+}
