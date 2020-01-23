@@ -13,7 +13,7 @@ namespace E2Lab1.Models
         {
             AllMovies.Add(newdata);
         }
-        public List<Movie> Get()
+        public List<Movie> library()
         {
             List<Movie> getmovies = new List<Movie>();
             if (AllMovies.Count > 10)
