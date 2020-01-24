@@ -8,8 +8,8 @@ using E2Lab1.Models;
 
 namespace E2Lab1.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("[controller]")]
     public class MovieController : ControllerBase
     {
 
