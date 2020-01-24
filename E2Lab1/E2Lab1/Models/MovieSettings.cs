@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace E2Lab1.Models
 {
-    public class MovieSettings //: movieconfig
+    public class MovieSettings : MovieInterface
     {
         public List<Movie> AllMovies = new List<Movie>();
 

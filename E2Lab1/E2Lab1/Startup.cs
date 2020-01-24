@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using E2Lab1.Models;
 
 namespace E2Lab1
 {
@@ -26,6 +27,8 @@ namespace E2Lab1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<MovieInterface>();
+            services.AddSingleton<Movie>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
